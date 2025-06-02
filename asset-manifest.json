@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.ac18593f.css",
-    "main.js": "/static/js/main.24d82c79.js",
-    "static/media/illustration-thank-you.svg": "/static/media/illustration-thank-you.d74a66b551b99ae110b5362ed63106bf.svg",
-    "static/media/icon-star.svg": "/static/media/icon-star.12766a8d207af861a70f92500634c8be.svg",
-    "index.html": "/index.html",
-    "main.ac18593f.css.map": "/static/css/main.ac18593f.css.map",
-    "main.24d82c79.js.map": "/static/js/main.24d82c79.js.map"
+    "main.css": "/interactive-rating-component-react/static/css/main.ac18593f.css",
+    "main.js": "/interactive-rating-component-react/static/js/main.90f1c6f1.js",
+    "static/media/illustration-thank-you.svg": "/interactive-rating-component-react/static/media/illustration-thank-you.d74a66b551b99ae110b5362ed63106bf.svg",
+    "index.html": "/interactive-rating-component-react/index.html",
+    "static/media/icon-star.svg": "/interactive-rating-component-react/static/media/icon-star.12766a8d207af861a70f92500634c8be.svg",
+    "main.ac18593f.css.map": "/interactive-rating-component-react/static/css/main.ac18593f.css.map",
+    "main.90f1c6f1.js.map": "/interactive-rating-component-react/static/js/main.90f1c6f1.js.map"
   },
   "entrypoints": [
     "static/css/main.ac18593f.css",
-    "static/js/main.24d82c79.js"
+    "static/js/main.90f1c6f1.js"
   ]
 }
