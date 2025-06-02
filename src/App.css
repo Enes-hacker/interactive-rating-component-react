@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+@import url('./components/base.css');
+@import url('./components/reset.css');
+
+:root {
+  --font-family: 'Overpass', sans-serif;
+  --font-body-size: 15px;
+  --font-weight-bold: 700;
+  --color-grey-950: hsl(216, 12%, 8%);
+  --color-grey-900: hsl(213, 19%, 18%);
+  --color-grey-500: hsl(217, 12%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-primary: hsl(25, 97%, 53%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-body-size);
+  background: var(--color-grey-950);
+  display: grid;
+  place-content: center;
   min-height: 100vh;
+}
+
+/* RATING CONTAINER */
+.rating-container {
+  max-width: 320px;
+  margin-inline: 20px;
+  background: var(--color-grey-900);
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+/* STAR SVG */
+.star-icon {
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: unset;
+  background: hsl(217, 12%, 63%, 0.1);
+  color: var(--color-grey-500);
+}
+
+/* TITLE AND DESCRIPTION */
+.title {
+  font-size: 1.3rem;
+  color: var(--color-white);
+  margin-top: 1rem;
+}
+
+.description {
+  color: var(--color-grey-500);
+  font-size: 12px;
+  margin-top: 1rem;
+}
+
+/* RATING BUTTONS */
+.rating-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: unset;
+  background: hsl(217, 12%, 63%, 0.1);
+  color: var(--color-grey-500);
+  cursor: pointer;
+}
+
+.rating-btn.selected {
+  background: var(--color-grey-500);
+  color: var(--color-white);
+}
+
+.rating-numbers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.rating-btn:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.rating-btn:focus {
+  background: var(--color-white);
+  color: var(--color-grey-950);
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+  margin-top: 1.4rem;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  font-weight: var(--font-weight-bold);
+  width: 100%;
+  background: var(--color-primary);
+  border: unset;
+  border-radius: 1.5rem;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.1rem;
+  color: var(--color-white);
+}
+
+.submit-btn:hover {
+  background: var(--color-white);
+  color: var(--color-grey-950);
+}
+
+/* THANK YOU */
+.thank-you {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  max-width: 320px;
+  background-color: var(--color-grey-900);
+  border-radius: 10px;
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--color-grey-500);
+  padding: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.thank-you-img {
+  padding: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.thank-you h2 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: var(--color-white);
+}
+
+.selection {
+  margin: 0.5rem 0;
+  font-size: 12px;
+  color: var(--color-primary);
+  padding: 0.5rem 0.9rem;
+  border-radius: 2rem;
+  background: hsl(217, 12%, 63%, 0.1);
 }
